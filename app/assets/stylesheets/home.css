@@ -1,0 +1,151 @@
+.center
+{
+    text-align: center
+}
+
+.portfolio-item img:hover { /* POSTFOLIO IMAGE BIG ON HOVER */
+    cursor: pointer;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    z-index: 1;
+}
+
+#service #profile {
+    margin-top: 80px;
+}
+
+.nav {
+    background-color: darkred !important;
+}
+.navbar-inverse
+{
+    background-color: darkred;
+}
+
+.navbar {
+    background-color: darkred !important;
+}
+
+#services {
+    background: #000 url('services/bg_services.png');
+    background-size: cover;
+}
+
+#services .lead,
+#services h2{
+    color: #fff;
+}
+
+.services-wrap {
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 0 40px;
+    color: black;
+}
+
+.services-wrap h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.services-wrap .pull-left {
+    margin-right: 20px;
+}
+
+
+#contact-info{
+    background: #fff url('contact/contact.png') no-repeat 90% 0;
+    padding: 30px 0;
+}
+
+.contact-info i{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-info h2{
+    margin-top: 0;
+    color: #000;
+}
+
+.contact-info{
+    color:#000;
+}
+
+
+#recent-works .col-xs-12.col-sm-4.col-md-3{
+    padding: 0;
+}
+
+#recent-works{
+    padding-bottom: 70px;
+}
+
+.recent-work-wrap {
+    position: relative;
+}
+
+.recent-work-wrap img{
+    width: 100%;
+}
+
+.recent-work-wrap .recent-work-inner{
+    top: 0;
+    background: transparent;
+    opacity: .8;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.recent-work-wrap .recent-work-inner h3{
+    margin: 10px 0;
+}
+
+.recent-work-wrap .recent-work-inner h3 a{
+    font-size: 24px;
+    color: #fff;
+}
+
+.recent-work-wrap .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0;
+    background: #c52d2f;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    padding: 30px;
+}
+
+.recent-work-wrap .overlay .preview {
+    bottom: 0;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+}
+
+.recent-work-wrap:hover .overlay {
+    opacity: 1;
+}

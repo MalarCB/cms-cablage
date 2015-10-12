@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title CablageCms
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %script{:src => "http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"}
+    %link{:href => "assets/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+    = csrf_meta_tags
+  %body
+    = yield

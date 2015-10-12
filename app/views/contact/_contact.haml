@@ -1,0 +1,25 @@
+= form_tag save_contact_path, id: 'contact-form'  do
+  .row
+    %hr
+      .col-sm-9.col-sm-offset-1
+        .row.form-group
+          .col-md-12
+            %h1 Contactez nous
+          .col-xs-4
+            = text_field :contact, :name, { placeholder: 'Votre Nom', class: 'form-control required'}
+          .col-xs-6
+            = text_field :contact, :company, { placeholder: 'Company ou Organization', class: 'form-control required'}
+        .row.form-group
+          .col-xs-5
+            = text_field :contact, :email, { placeholder: 'Votre Email', class: 'form-control required'}
+          .col-xs-5
+            = text_field :contact, :phone, { placeholder: 'Votre phone', class: 'form-control required'}
+        .row.form-group
+          .col-xs-10
+            = text_area :contact, :comments, { placeholder: 'Votre Commentaire/Question', class: 'form-control required'}
+        .row.form-group
+          .col-xs-10
+            .row.bump
+              #success
+              .btn.btn-default
+                = submit_tag 'Envoyer', class: 'btn', id: 'send_contact'
