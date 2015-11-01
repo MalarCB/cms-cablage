@@ -3,10 +3,10 @@
     %ul.list-inline.center-block
       %li
         =link_to "https://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class: "fb", target: '_blank' do
-          %img{:src => "/assets/soc_fb.png"}/
+          %img{:src => asset_path("soc_fb.png")}/
       %li
         =link_to "https://twitter.com/share?url=#{request.original_url}&text=Carte Electroniques?", class: "tw mid", target: '_blank' do
-          %img{:src => "/assets/soc_tw.png"}/
+          %img{:src => asset_path("soc_tw.png")}/
       %li
         =link_to "https://plus.google.com/share?url=#{request.original_url}", class: "gp", target: '_blank' do
-          %img{:src => "/assets/soc_gplus.png"}/
+          %img{:src => asset_path("soc_gplus.png")}/
