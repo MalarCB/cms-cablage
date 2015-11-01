@@ -8,11 +8,13 @@
     .collapse.navbar-collapse
       %ul.nav.navbar-nav.nav-justified
         %li
-          %a{:href => "#section1"} Home
+          =link_to 'Home', root_path
         %li
-          %a{:href => "#section2"} Profile
+          =link_to 'Profile', profile_path
+        %li
+          =link_to 'Services', service_path
         %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#section3"}
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#section4"}
             Projects
             %b.caret
           %ul.dropdown-menu
@@ -29,6 +31,6 @@
             %li
               %a{:href => "#"} Religious
         %li
-          %a{:href => "#section4"} Blog
+          =link_to 'Blog', blog_path
         %li
-          %a{:href => "#section5"} Contact
+          =link_to 'Contact', contact_path

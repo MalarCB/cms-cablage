@@ -11,19 +11,19 @@ $(document).ready(function(){
   });
 
   /* highlight the top nav as scrolling occurs */
-  $('body').scrollspy({ target: '#nav' })
+  //$('body').scrollspy({ target: '#nav' })
 
   /* smooth scrolling for scroll to top */
   $('.scroll-top').click(function(){
-    $('body,html').animate({scrollTop:0},1000);
+    //$('body,html').animate({scrollTop:0},1000);
   })
 
-  /* smooth scrolling for nav sections */
-  $('#nav .navbar-nav li>a').click(function(){
-    var link = $(this).attr('href');
-    var posi = $(link).offset().top;
-    $('body,html').animate({scrollTop:posi},700);
-  });
+  ///* smooth scrolling for nav sections */
+  //$('#nav .navbar-nav li>a').click(function(){
+  //  var link = $(this).attr('href');
+  //  var posi = $(link).offset().top;
+  //  $('body,html').animate({scrollTop:posi},700);
+  //});
 
 
   /* copy loaded thumbnails into carousel */
@@ -63,7 +63,6 @@ $(document).ready(function(){
     $('#modalCarousel').carousel(id); // slide carousel to selected
     return false;
   });
-
 
   try
   {
@@ -111,14 +110,10 @@ $(document).ready(function(){
   }
   catch(exception)
   {
-    console.log(exception)
+    //console.log(exception)
   }
 
   /* end google maps */
 
-  //Pretty Photo
-  $("a[rel^='prettyPhoto']").prettyPhoto({
-    social_tools: false
-  });
 
 });

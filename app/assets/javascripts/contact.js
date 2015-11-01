@@ -1,6 +1,7 @@
 $(function() {
-  $('#send_contact').click(function (e) {
-    event.preventDefault(); // prevent default submit behaviour
+  $('body').on('click', '#send_contact', function(e) {
+    e.preventDefault(); // prevent default submit behaviour
+    e.stopPropagation();
 
     var name = $("#contact_name").val();
     var email = $("#contact_email").val();
@@ -27,6 +28,8 @@ $(function() {
         }
       },
       success: function (e) {
+        console.log('ss')
+        console.log(e)
         $('#success').html("<div class='alert alert-success'>")
         $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>")
         $('#success > .alert-success').append("<strong>Your message has been sent. </strong>")
@@ -36,6 +39,8 @@ $(function() {
         $('#contact-form').trigger("reset")
       },
       error: function (e) {
+        console.log('fail')
+        console.log(e)
         // Fail message
         $('#success').html("<div class='alert alert-danger'>");
         $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")

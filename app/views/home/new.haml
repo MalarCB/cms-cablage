@@ -33,29 +33,11 @@
   #section5.divider
   =render "contact/contact"
 
-  / /row
-  .container
-    .col-sm-8.col-sm-offset-2.text-center
-      %ul.list-inline.center-block
-        %li
-          =link_to "https://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class: "fb", target: '_blank' do
-            %img{:src => "/assets/soc_fb.png"}/
-        %li
-          =link_to "https://twitter.com/share?url=#{request.original_url}&text=How do your salary and skills compare?", class: "tw mid", target: '_blank' do
-            %img{:src => "/assets/soc_tw.png"}/
-        %li
-          =link_to "https://plus.google.com/share?url=#{request.original_url}", class: "gp", target: '_blank' do
-            %img{:src => "/assets/soc_gplus.png"}/
-  / /col
-  / /container
-/ /wrap
-#footer
-  .container
-    %p.text-muted Copyright ©2015 Cablage CMS.
 %ul.nav.pull-right.scroll-top
   %li
     %a{:href => "#", :title => "Scroll to top"}
       %i.glyphicon.glyphicon-chevron-up
+
 #myModal.modal{:role => "dialog"}
   .modal-dialog
     .modal-content

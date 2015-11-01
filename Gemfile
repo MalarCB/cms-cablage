@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'compass', '1.0.3'
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0.5'
 
 gem 'turbolinks'
 
@@ -41,3 +42,7 @@ group :production, :staging do
 end
 
 gem 'bootstrap-sass', '~> 3.3.5'
+
+gem 'activeadmin'
+
+gem 'country_select'

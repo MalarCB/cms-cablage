@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery-ui
 //= require bootstrap
 //= require jquery_easing
 //= require pretty_photo

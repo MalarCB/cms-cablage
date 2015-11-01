@@ -1,7 +1,8 @@
+require 'route_constraints/internal_network_whitelist_constraint'
+
 class ContactController < ApplicationController
 
   def new
-
   end
 
   def save
@@ -17,6 +18,7 @@ class ContactController < ApplicationController
   end
 
   private
+
   def geo_location
     if Rails.env.test? || Rails.env.development?
       "dev"

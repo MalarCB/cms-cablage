@@ -13,10 +13,13 @@
     z-index: 1;
 }
 
-#service #profile {
+#service  {
     margin-top: 80px;
 }
 
+#profile{
+    margin-top: 80px;
+}
 .nav {
     background-color: darkred !important;
 }
@@ -148,4 +151,9 @@
 
 .recent-work-wrap:hover .overlay {
     opacity: 1;
+}
+
+#services-fade-in-down
+{
+    margin-top: -70px;
 }

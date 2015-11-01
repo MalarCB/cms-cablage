@@ -15,4 +15,8 @@ class HomeController < ApplicationController
   def profile
 
   end
+
+  def blog
+
+  end
 end
