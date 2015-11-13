@@ -46,3 +46,5 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'country_select'
 
 gem "administrate"
+
+gem 'sitemap_generator'
