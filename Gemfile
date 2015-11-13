@@ -43,6 +43,6 @@ end
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
-gem 'activeadmin'
-
 gem 'country_select'
+
+gem "administrate"

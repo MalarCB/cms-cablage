@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
 
-  ActiveAdmin.routes(self)
+  namespace :admin do
+    DashboardManifest::DASHBOARDS.each do |dashboard_resource|
+      resources dashboard_resource
+    end
+
+    root controller: DashboardManifest::ROOT_DASHBOARD, action: :index
+  end
+
   root 'home#new'
 
   get 'new', to: 'home#new', as: :new

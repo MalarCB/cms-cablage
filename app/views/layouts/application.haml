@@ -2,6 +2,15 @@
 %html
   %head
     %title Cablage -- CMS
+    = csrf_meta_tags
+    %meta{:charset => 'UTF-8'}/
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0, maximum-scale=1.0'}
+    %meta{:content => 'Cablage CMS Services', :property => 'og:title'}
+    %meta{:content => 'Cablage CMS Services 24/7 - Spécialiste dans le câblage de cartes électroniques de haute technologie en délai très court sur 24/7', :property => 'og:description'}
+    %meta{:content => 'Cablage CMS Services', :name => 'title', :itemprop => 'name'}
+    %meta{:content => 'Cablage CMS Services 24/7 - Spécialiste dans le câblage de cartes électroniques de haute technologie en délai très court sur 24/7', :name => 'description'}
+    %link{:rel => 'canonical', href: root_url, :itemprop => 'url'}
+
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     %script{:src => "//maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"}
