@@ -32,10 +32,6 @@
     background-color: darkred !important;
 }
 
-#services {
-    background: #000 url('services/bg_services.png');
-    background-size: cover;
-}
 
 #services .lead,
 #services h2{
