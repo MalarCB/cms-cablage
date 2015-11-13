@@ -5,7 +5,7 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     %script{:src => "//maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"}
-    %link{:href => "assets/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+    %link{:href => asset_path('favicon.ico'), :rel => "icon", :type => "image/x-icon"}/
     = csrf_meta_tags
   %body
     = yield
