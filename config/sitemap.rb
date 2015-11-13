@@ -1,4 +1,4 @@
-SitemapGenerator::Sitemap.default_host = 'http://cablagecms.fr'
+SitemapGenerator::Sitemap.default_host = 'https://cablagecms.herokuapp.com'
 SitemapGenerator::Sitemap.create_index = :auto
 
 SitemapGenerator::Sitemap.create(compress: false) do
