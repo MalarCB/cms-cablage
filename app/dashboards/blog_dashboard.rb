@@ -16,8 +16,8 @@ class BlogDashboard < Administrate::BaseDashboard
     tags: Field::String,
     likes: Field::Number,
     category: Field::String,
-    status: Field::Boolean,
     image: Field::String,
+    status: Field::Boolean,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -49,7 +49,7 @@ class BlogDashboard < Administrate::BaseDashboard
     :tags,
     :likes,
     :category,
+    :image,
     :status,
-    :image
   ]
 end
