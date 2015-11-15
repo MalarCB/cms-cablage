@@ -11,22 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151030100536) do
+ActiveRecord::Schema.define(version: 20151115110834) do
 
-  create_table "active_admin_comments", force: :cascade do |t|
-    t.string   "namespace"
-    t.text     "body"
-    t.string   "resource_id",   null: false
-    t.string   "resource_type", null: false
-    t.integer  "author_id"
-    t.string   "author_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "blogs", force: :cascade do |t|
+    t.string   "user"
+    t.text     "title"
+    t.text     "content"
+    t.string   "tags"
+    t.integer  "likes"
+    t.string   "category"
+    t.string   "image"
+    t.boolean  "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
-  add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
-  add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
+  create_table "comments", force: :cascade do |t|
+    t.string   "user"
+    t.string   "email"
+    t.string   "url"
+    t.text     "message"
+    t.integer  "blog_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["blog_id"], name: "index_comments_on_blog_id"
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"

@@ -17,6 +17,6 @@ class HomeController < ApplicationController
   end
 
   def blog
-
+    @blogs = Blog.all
   end
 end

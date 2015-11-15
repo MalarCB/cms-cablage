@@ -21,17 +21,16 @@
     margin-top: 80px;
 }
 .nav {
-    background-color: darkred !important;
+    background-color: midnightblue !important;
 }
 .navbar-inverse
 {
-    background-color: darkred;
+    background-color: midnightblue;
 }
 
 .navbar {
-    background-color: darkred !important;
+    background-color: midnightblue !important;
 }
-
 
 #services .lead,
 #services h2{
@@ -152,4 +151,9 @@
 #services-fade-in-down
 {
     margin-top: -70px;
+}
+
+.text-muted
+{
+    color: black !important;
 }

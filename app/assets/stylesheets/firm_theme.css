@@ -9,9 +9,15 @@ body {
     height: 100%;
     /* The html and body elements cannot have any padding or margin. */
     -webkit-font-smoothing: antialiased;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: bold !important;
+    font-size: 18px !important;
 }
 
+h2{
+    font-family: 'Lobster';
+    color: black;
+}
 .row {
     margin-left:0px;
     margin-right:0px;
@@ -108,6 +114,7 @@ h1 {
     top:70px;
     text-align:center;
     width:100%;
+    font-family: 'Lobster';
 }
 
 #nav {
@@ -151,7 +158,8 @@ h1 {
     color: #eee;
 }
 .navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
-    background-color: #000;
+    background-color: white;
+    color: black;
 }
 .navbar-custom .navbar-nav>.dropdown>a .caret {
     border-top-color: #999;
@@ -197,8 +205,9 @@ h1 {
     border-top-left-radius:3px;
     border-top-right-radius:3px;
 }
+
 .scroll-top a:link,.scroll-top a:visited {
-    color:#222;
+    color:white;
 }
 
 section {

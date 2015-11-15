@@ -8,5 +8,6 @@ SitemapGenerator::Sitemap.create(compress: false) do
     add service_path, priority: 0.7
     add profile_path, priority: 0.7
     add service_path, priority: 0.7
+    add contact_path, priority: 0.7
   end
 end

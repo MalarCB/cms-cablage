@@ -1,0 +1,23 @@
+.blog-item
+  .row
+    .col-xs-12.col-sm-2.text-center
+      .entry-meta
+        %span#publish_date 07  NOV
+        %span
+          %i.fa.fa-user
+          =link_to blog.title, '#'
+        %span
+          %i.fa.fa-comment
+          =link_to "#{blog.comments.count} Comments", '#'
+        %span
+          %i.fa.fa-heart
+          =link_to "#{blog.likes} likes", '#'
+    .col-xs-12.col-sm-10.blog-content
+      %a{:href => "#"}
+        %img.img-responsive.img-blog{:alt => "", :src => asset_path(blog.image), :width => "100%"}/
+      %h2
+        =link_to blog.title, '#'
+      %h3=blog.content
+      %a.btn.btn-primary.readmore{:href => "blog-item.html"}
+        Read More
+        %i.fa.fa-angle-right
