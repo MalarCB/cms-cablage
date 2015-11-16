@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Cablage -- CMS
+    %title Cablage - CMS
     = csrf_meta_tags
     %meta{:charset => 'UTF-8'}/
     %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0, maximum-scale=1.0'}
@@ -20,6 +20,7 @@
     = stylesheet_link_tag    'application', media: 'all'
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = javascript_include_tag 'application'
+    =render "layouts/ga_script"
     %script{:src => "//maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"}
     %link{:href => asset_path('favicon.ico'), :rel => "icon", :type => "image/x-icon"}/
     = csrf_meta_tags
